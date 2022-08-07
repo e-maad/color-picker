@@ -1,0 +1,16 @@
+html,
+body,
+#root,
+#fullheight {
+  height: 100%;
+}
+
+.app {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+.app-content {
+  width: 800px;
+  height: max-content;
+}
