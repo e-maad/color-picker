@@ -1,0 +1,12 @@
+.drawing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2%;
+  margin-top: 30px;
+  padding: 50% 20px;
+  border-radius: 2%;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  font-size: 34px;
+  cursor: copy;
+}

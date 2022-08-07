@@ -1,6 +1,6 @@
 import React from "react";
 import { fireEvent, render, screen } from "@testing-library/react";
-import ColorPicker from "./ColorPicker";
+import ColorPicker from "../ColorPicker";
 
 const colorPalette = ["#010221", "#0A7373", "#B7BF99", "#EDAA25", "#C43302"];
 

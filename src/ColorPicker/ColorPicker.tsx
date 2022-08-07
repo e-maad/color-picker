@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { invertColor } from "./helper";
+import { invertColor } from "../helper";
 import "./ColorPicker.css";
 
 type ColorPickerProps = {
@@ -12,6 +12,12 @@ export default function ColorPicker({
   selectedColorFontSize,
 }: ColorPickerProps) {
   const [currentColor, setCurrentColor] = useState("#000000");
+
+  const colorClickHandler = async (color: string) => {
+    setCurrentColor(color);
+    await navigator.clipboard.writeText(color);
+  };
+
   return (
     <div className="color-picker">
       <div
@@ -33,7 +39,7 @@ export default function ColorPicker({
           style={{
             backgroundColor: color,
           }}
-          onClick={() => setCurrentColor(color)}
+          onClick={() => colorClickHandler(color)}
         />
       ))}
     </div>
